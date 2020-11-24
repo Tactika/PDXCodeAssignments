@@ -1,7 +1,15 @@
+import argparse
 import string
 
-string = input("Please enter the string you'd like to encrypt:  ")
-rotations = int(input("How many rotations would you like to encrypt by?:  "))
+parser = argparse.ArgumentParser(description='ROT Cipher')
+parser.add_argument('string', type=str)
+parser.add_argument('rotations', type=int)
+args = parser.parse_args()
+
+
+string = input("Please enter the string you'd like to encrypt/decrypt:  ")
+rotations = int(input("How many rotations would you like to encrypt/decrypt by?:  "))
+
 
 alphabet_lower = "abcdefghijklmnopqrstuvwxyz"
 alphabet_upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -10,7 +18,6 @@ punct = """!"#$%&'()*+,-./0123456789:;<=>?@"""
 decoded_lower = [*range(97, 123)]
 decoded_upper = [*range(65, 91)]
 decoded_punct = [*range(33, 65)]
-
 
 def encrypt_data(string, rotations):
     encoded_string = ""
@@ -30,15 +37,10 @@ def encrypt_data(string, rotations):
             new_letter = chr(new_letter)
             encoded_string += new_letter
         else:
-            print(
-                "Please enter a new string using upper-case, lower-case, and standard punctuation!"
-            )
+            print('Please enter a new string using upper-case, lower-case, and standard punctuation!')
             string = input("Please enter the string you'd like to encrypt:  ")
-            rotations = int(
-                input("How many rotations would you like to encrypt by?:  ")
-            )
-
+            rotations = int(input("How many rotations would you like to encrypt by?:  "))
+    
     print(encoded_string)
-
 
 encrypt_data(string, rotations)
