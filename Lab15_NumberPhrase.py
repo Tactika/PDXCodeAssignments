@@ -1,3 +1,4 @@
+
 lower_num = {
     0: 'zero',
     1: 'one',
@@ -58,51 +59,31 @@ whole_hundreds = {
 def num_to_phrase(number):
     while True:
         if number in whole_tens:
-            print(f'{whole_tens[number]}')
-            break
+            return whole_tens[number]
         elif number in lower_num and number < 20:
-            print(f'{lower_num[number]}')
-            break
+            return lower_num[number]
         elif number > 21 and number < 100:
             ones_place = number % 10
             tens_place = number // 10
-            print(f'{tens[tens_place]}{lower_num[ones_place]}')
-            break
+            return str(tens[tens_place] + lower_num[ones_place])
         elif number in whole_hundreds:
-            print(f'{whole_hundreds[number]}')
-            break
+            return whole_hundreds[number]
         elif number >= 100 and number <= 999:
             hundreds = number // 100
             tens_place = (number % 100) // 10
             ones_place = (number % 100) % 10
             if number - (hundreds * 100)  in lower_num:
                 teens = number - (hundreds * 100)
-                print(f'{lower_num[hundreds]} hundred {lower_num[teens]}')
-                break
+                return str(lower_num[hundreds] + ' hundred ' + lower_num[teens])
             elif number - (hundreds * 100) in whole_tens:
                 tens_place = number - (hundreds * 100)
-                print(f'{lower_num[hundreds]} hundred {whole_tens[tens_place]}')
-                break
+                return str(lower_num[hundreds] + ' hundred ' + whole_tens[tens_place])
             else:
-                print(f'{lower_num[hundreds]} hundred {tens[tens_place]}{lower_num[ones_place]}')
-                break
+                return str(lower_num[hundreds] + ' hundred ' + tens[tens_place] + lower_num[ones_place])
         else:
-            print('Invalid Input')
-            print(f'The number {number} is not in the range of 0 thru 999')
             break
     
-num_to_phrase(0)
-num_to_phrase(2)
-num_to_phrase(3)
-num_to_phrase(10)
-num_to_phrase(12)
-num_to_phrase(17)
-num_to_phrase(27)
-num_to_phrase(88)
-num_to_phrase(99)
-num_to_phrase(100)
-num_to_phrase(380)
-num_to_phrase(525)
-num_to_phrase(1001)
+for i in range(1000):
+    num_to_phrase(i)
 
 
