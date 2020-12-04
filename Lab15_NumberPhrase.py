@@ -71,7 +71,7 @@ def num_to_phrase(number):
         elif number in whole_hundreds:
             print(f'{whole_hundreds[number]}')
             break
-        elif number >= 100:
+        elif number >= 100 and number <= 999:
             hundreds = number // 100
             tens_place = (number % 100) // 10
             ones_place = (number % 100) % 10
@@ -103,5 +103,6 @@ num_to_phrase(99)
 num_to_phrase(100)
 num_to_phrase(380)
 num_to_phrase(525)
+num_to_phrase(1001)
 
 
