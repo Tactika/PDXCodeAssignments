@@ -14,7 +14,6 @@
     <li><h2>Image Manipulation</h2></li>
         <ul>
             <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/lab16_image_manipulation.py'>Lab 16 - Image Manipulation v1 (Greyscale)</a><img src='https://github.com/Tactika/PDXCodeAssignments/blob/main/lenna_v1_greyscale.PNG'/></li>
-            <li>
             <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/lab16_image_manipulation_v2.py'>Lab 16 - Image Manipulation v2 (HSV Values)</a><img src='https://github.com/Tactika/PDXCodeAssignments/blob/main/lenna_v2_hsv.PNG' alt='Image Modified using HSV Values'></li>
         <ul>
     <li><h2>Lab 17 - Palindrome and Anagram Checker</h2></li>
