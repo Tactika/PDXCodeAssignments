@@ -23,4 +23,10 @@
             <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/lab17_palindrome.py'>Lab 17 - Palindrome and Anagram Checker</a></li>
             <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/test_lab17_palindrome.py'>Lab 17 - Palindrome and Anagram Checker (PyTest)</a></li>
         </ul>
+    <li><h2>Lab 18 - Peaks and Valleys</h2></li>
+        <ul>
+            <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/lab18/lab18_peaks_valleys.py'>Lab 18 - Peaks and Valleys - v1 (Work in Progress)</a></li>
+            <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/lab18/test_lab18_peaks_valleys.py'>Lab 18 - Peaks and Valleys - PyTest</a></li>
+        </ul>
+        
 </ul>
