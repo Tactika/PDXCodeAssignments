@@ -28,5 +28,10 @@
             <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/lab18/lab18_peaks_valleys.py'>Lab 18 - Peaks and Valleys - v1</a></li>
             <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/lab18/test_lab18_peaks_valleys.py'>Lab 18 - Peaks and Valleys - PyTest</a></li>
         </ul>
+    <li><h2>Lab 20 - Credit Card Validation</h2></li>
+        <ul>
+            <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/lab20_credit_card.py'>Lab 20 - Credit Card Validation</a></li>
+            <li><a href=''>Lab 20 - Credit Card Validation - PyTest</a></li>
+        </ul>
 
 </ul>
