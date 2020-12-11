@@ -33,5 +33,9 @@
             <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/lab20_credit_card.py'>Lab 20 - Credit Card Validation</a></li>
             <li><a href=''>Lab 20 - Credit Card Validation - PyTest</a></li>
         </ul>
-
+    <li><h2>Lab 21 - Word Count</h2></li>
+        <ul>
+            <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/lab21_word_count.py'>Lab 21 - Word Count (Alice in Wonderland)</a></li>
+            <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/alice.txt'>Lab 21 - Word Count (Alice in Wonderland)</a></li>
+        </ul>
 </ul>
