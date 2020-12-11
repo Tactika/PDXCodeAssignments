@@ -36,6 +36,6 @@
     <li><h2>Lab 21 - Word Count</h2></li>
         <ul>
             <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/lab21_word_count.py'>Lab 21 - Word Count (Alice in Wonderland)</a></li>
-            <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/alice.txt'>Lab 21 - Word Count (Alice in Wonderland)</a></li>
+            <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/alice.txt'>Alice in Wonderland Text</a></li>
         </ul>
 </ul>
