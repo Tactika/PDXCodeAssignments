@@ -38,4 +38,9 @@
             <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/lab21_word_count.py'>Lab 21 - Word Count (Alice in Wonderland)</a></li>
             <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/alice.txt'>Alice in Wonderland Text</a></li>
         </ul>
+    <li><h2>Lab 22 - Compute Automated Readability Index</h2></li>
+        <ul>
+            <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/Lab22/lab22_car_index.py'>Lab 21 - ARI</a></li>
+            <li><a href='https://github.com/Tactika/PDXCodeAssignments/blob/main/Lab22/alice.txt'>Alice in Wonderland Text</a></li>
+        </ul>
 </ul>
