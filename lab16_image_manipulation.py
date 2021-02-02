@@ -1,4 +1,6 @@
 from PIL import Image
+import colorsys
+
 img = Image.open("lenna.png")  # must be in same folder
 width, height = img.size
 pixels = img.load()
@@ -8,9 +10,17 @@ for i in range(width):
         r, g, b = pixels[i, j]
 
         # your code here
-        r = int(0.299*r + 0.587*g + 0.114*b)
-        g = int(0.299*r + 0.587*g + 0.114*b)
-        b = int(0.299*r + 0.587*g + 0.114*b)
+        r = r - 170
+        g = g + 2
+        b = b - 20
+
+        h, s, v = colorsys.rgb_to_hsv(r/255, g/255, b/255)
+        
+        r, g, b = colorsys.hsv_to_rgb(h, s, v)
+
+        r = int(r*255)
+        g = int(g*255)
+        b = int(b*255)
 
         pixels[i, j] = (r, g, b)
 

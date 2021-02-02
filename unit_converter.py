@@ -1,3 +1,8 @@
+import sys
+
+print('Number of arguments:', len(sys.argv), 'arguements.')
+print('Arguement List:', str(sys.argv))
+
 def meter_converter(distance, measurement_from, measurement_to):
     meter_distance = round(distance / measurement_to * measurement_from, 2)
     return meter_distance

@@ -1,28 +1,27 @@
 import random
 
-answer = 3
-list = [1, 2, 3, 4, 5]  
-
 def average(num1, num2):
-    return (num1 + num2) / 2
+    return int((num1 + num2) / 2)
 
-def binary_search(list, search_value):
-    search_value = random.randint(1,10)
-    highest_value = 10
-    lowest_value = 1
+def binary_search(range_list, search_value):
+    mid_index = average(0, len(range_list))
+    highest_index = len(range_list) - 1
+    lowest_index = 0
     while True:
-        if search_value == answer:
-            print(f'Congratulations, you\'ve answered correctly! {search_value} is the answer!')
-            break
-        elif search_value < answer:
-            previous_search_value = search_value
-            search_value = int(average(search_value, highest_value) +1)
-            highest_value = previous_search_value
-            print(search_value)
-        elif search_value > answer:
-            previous_search_value = search_value
-            search_value = int(average(search_value, lowest_value) -1)
-            lowest_value = previous_search_value
-            print(search_value)
+        if search_value == mid_index:
+            print('Correct')
+            return search_value
+        elif search_value > highest_index or search_value < lowest_index:
+            print('Not in Range')
+            return -1
+        elif search_value < mid_index:
+            previous_mid_index = mid_index
+            mid_index = average(lowest_index, mid_index - 1)
+            highest_index = previous_mid_index
+        elif search_value > mid_index:
+            previous_mid_index = mid_index
+            mid_index = average(mid_index, highest_index + 1)
+            lowest_index = previous_mid_index
 
-binary_search(list, answer)
+
+binary_search([1,2,3,4,5], 4)
